@@ -31,7 +31,8 @@ function coffeeTemplate(coffee) {
         <p>
         <img src="${coffee.pic}" alt="Our ${coffee.alt}!" id="coffee">
         <strong class="feature">${coffee.day}'s Coffee Special:</strong> ${coffee.day}'s daily coffee special is <strong
-            class="feature">${coffee.name}</strong>, ${coffee.desc}
+            class="feature">${coffee.name}</strong>!
+            <p> ${coffee.desc} </p>
         </p>
         `;
 
@@ -43,12 +44,12 @@ switch (myDay) {
     case 0:
         today = "Sunday";
         coffee = {
-            name: "Drip",
-            color: "brown",
-            pic: "images/drip.jpg",
-            alt: "A picture of Drip coffee",
-            day: "Wednesday",
-            desc: `Some days you just need the Drip`
+            name: "Bubble Tea",
+            color: "#c96462",
+            pic: "images/bubble-tea.jpg",
+            alt: "A picture of Bubble Tea",
+            day: "Sunday",
+            desc: `Add some Bubble to your life!`
 
         };
         break;
@@ -83,7 +84,7 @@ switch (myDay) {
             name: "Drip",
             color: "brown",
             pic: "images/drip.jpg",
-            alt: "A piccture of Drip coffee",
+            alt: "A picture of Drip coffee",
             day: "Wednesday",
             desc: `Some days you just need the Drip`
 
@@ -92,14 +93,38 @@ switch (myDay) {
 
     case 4:
         today = "Thursday";
+        coffee = {
+            name: "Frappuccino",
+            color: "#8A502B",
+            pic: "images/frappaccino.jpg",
+            alt: "A picture of Frappuccino",
+            day: "Thursday",
+            desc: `Hot day? Try the Frappe!`
+        };
         break;
 
     case 5:
         today = "Friday";
+        coffee = {
+            name: "Mocha",
+            color: "#a38068",
+            pic: "images/mocha.jpg",
+            alt: "A picture of Mocha",
+            day: "Friday",
+            desc: `Everybody Loves Mocha!`
+        };
         break;
 
     case 6:
         today = "Saturday";
+        coffee = {
+            name: "Pumpkin spice latte",
+            color: "#ff7518",
+            pic: "images/pumpkin-spice-latte.jpg",
+            alt: "A picture of Pumpkin Spice latte",
+            day: "Saturday",
+            desc: `Its the weekend, add some "spice" to your life`
+        };
         break;
 }
 
